@@ -27,16 +27,16 @@ function nodePrettyLog(type, ...messages) {
       console.log.call(console, chalk.green('Success:'), chalk.gray(getTime()), ...messages);
       break;
     case 'error':
-      console.log.call(console, chalk.red('Error:'), chalk.gray(getTime()), ...messages);
+      console.log.call(console, chalk.red('Error:  '), chalk.gray(getTime()), ...messages);
       break;
     case 'warn':
       console.log.call(console, chalk.yellow('Warning:'), chalk.gray(getTime()), ...messages);
       break;
     case 'info':
-      console.log.call(console, chalk.blue('Info:'), chalk.gray(getTime()), ...messages);
+      console.log.call(console, chalk.blue('Info:   '), chalk.gray(getTime()), ...messages);
       break;
     default:
-      console.log.call(console, chalk.blue('Info:'), chalk.gray(getTime()), ...messages);
+      console.log.call(console, chalk.blue('Info:   '), chalk.gray(getTime()), ...messages);
   }
 }
 
